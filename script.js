@@ -56,18 +56,40 @@ function Number6(isEven) {
 }
 console.log(Number5(Number6));
 
-// 10. Arrow Function და რიცხვის კუბის გამოთვლა:
-// Arrow Function, რომელიც მიიღებს რიცხვს და დააბრუნებს მის კუბს. მაგალითად: const cube = (num) => num * num * num;
+// 10. Arrow Function და რიცხვის კუბის გამოთვლა 
+const cube = (num4) => num4 ** 3;
+console.log(cube(5));
 
-// 11. Callback Function და მარტივი გამრავლება:
-// დაწერე ფუნქცია, რომელიც მიიღებს ორ რიცხვს და Callback ფუნქციას, რომელიც დააბრუნებს მათ ნამრავლს.
+// 11. Callback Function და მარტივი გამრავლება
+function number1(x, y, Callback) {
+    const multip = x * y;
+    return Callback(multip)
+}
+function number2(multip) {
+    return multip;
+}
+console.log(number1(8, 9, number2));
 
-// 12. Arrow Function და რიცხვის დადებითობის შემოწმება:
-// Arrow Function, რომელიც შეამოწმებს, არის თუ არა რიცხვი ნულზე მეტი. მაგალითად: const isGreaterThanZero = (num) => num > 0;
+// 12. Arrow Function და რიცხვის დადებითობის შემოწმება
+const metiaNulze = (num5) => num5 > 0;
+console.log(metiaNulze(15));
 
-// 13. დაწერე Anonymous ფუნქცია, რომელიც მიიღებს ერთ რიცხვს და დააბრუნებს მის ნახევარს. მაგალითად: (function(n) { return n / 2; })(10);
-// Callback Function და რიცხვის დამატება:
+// 13. დაწერე Anonymous ფუნქცია, რომელიც მიიღებს ერთ რიცხვს და დააბრუნებს მის ნახევარს
+const half = function(n) { 
+    return n / 2; 
+};
+console.log(half(10));
 
 // 14. დაწერე ფუნქცია, რომელიც მიიღებს ორ რიცხვს და Callback ფუნქციას, რომელიც შეაჯამებს ამ რიცხვებს.
+function number3(c, d, Callback) {
+    const sum = c + d;
+    return Callback(sum)
+}
+function number4(sum) {
+    return sum;
+}
+console.log(number3(17, 18, number4));
 
-// 15. Arrow Function, რომელიც მიიღებს ერთ რიცხვს და დააბრუნებს მის კვადრატს. მაგალითი: const square = (num) => num * num;
+// 15. Arrow Function, რომელიც მიიღებს ერთ რიცხვს და დააბრუნებს მის კვადრატს
+const square = (num6) => num6 ** 2;
+console.log(square(11));
